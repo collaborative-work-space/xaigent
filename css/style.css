@@ -76,6 +76,18 @@
     margin: 24px 0 48px;
     font-size: 1.05rem;
   }
+
+  /* Contributions */
+  .contributions {
+    margin: 24px 0 48px;
+    font-size: 1.05rem;
+  }
+  
+  /* Methodology */
+  .methodology {
+    margin: 24px 0 48px;
+    font-size: 1.05rem;
+  }
   
   /* A11y utility */
   .visually-hidden {
@@ -83,5 +95,28 @@
     height: 1px; width: 1px;
     overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gif-container figure {
+    text-align: center;
+  }
+
+  .bibtex-block {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 0.9em;
+    overflow-x: auto;
+    text-align: justify;       /* left aligned */
+    white-space: pre-wrap;  /* preserve formatting */
+    line-height: 1.4;
   }
   
