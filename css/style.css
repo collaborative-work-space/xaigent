@@ -97,13 +97,30 @@
     white-space: nowrap;
   }
 
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* wraps neatly on smaller screens */
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .image-container figure {
+    text-align: center;
+  }
+  
   .image-container img {
+    max-width: 400px; /* adjust for your gif size */
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
-
-  .gif-container figure {
+  
+  .image-container figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
     text-align: center;
   }
 
