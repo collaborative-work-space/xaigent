@@ -19,17 +19,89 @@
       </p>
       <p class="affiliation">CSIRO, Data61, Australia</p>
       <nav class="actions">
-        <a href="#" class="btn" target="_blank" rel="noopener">📄 Paper</a>
-        <a href="https://github.com/collaborative-work-space/xaigent/" class="btn" target="_blank" rel="noopener">💻 Code</a>
+        <a href="https://dl.acm.org/doi/full/10.1145/3764687.3770726" class="btn" target="_blank" rel="noopener">📄 Paper</a>
+        <a href="pdf/XAIgent.pdf" class="btn" target="_blank" rel="noopener">🎥 Poster (PDF)</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Abstract -->
     <section id="abstract" class="container">
-      <h2 class="visually-hidden">Abstract</h2>
+      <h2>Abstract</h2>
       <p class="abstract">
-        Content will be added soon…
+        Robotic systems are increasingly used in scientific exploration, but their opaque decision-making processes hinder interpretability, limiting human understanding and trust in human-robot collaboration. To address this, explainability must be integrated into interactive human-robot interaction (HRI) systems, especially for non-roboticist scientists. This work presents ‘XAIgent’, a multi-agent system (MAS)-based framework designed to support interactive and explainable HRI in scientific exploration. By decomposing robotic decision-making into modular, agent-based components, XAIgent provides more interpretable and adaptive explanations than monolithic approaches. Our approach guides the integration of explainability into robotic assistants to accelerate scientific discovery. We outline key principles for designing interactive systems that allow scientists to query a robot’s actions, understand its reasoning and errors in real-time, intervene when necessary, and explore its functionalities to enhance transparency and control by demonstrating a simulated scientific environment created in Unity, accompanied by a preliminary user study evaluating the system’s effectiveness.
+      </p>
+    </section>
+
+    <!-- Contributions -->
+    <section id="contributions" class="container">
+      <h2>Contributions</h2>
+      <ul>
+        <li>A multi-agent system design to shift robots from monolithic systems toward modular components, enabling the development of explainable HRI interfaces.</li>
+        <li>A Unity-based prototype demonstrating multimodal feedback (voice, text, visual) and spatial reasoning.</li>
+        <li>A preliminary user study evaluating usability, clarity, and trustworthiness of explanations.</li>
+      </ul>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="container">
+      <h2>Methodology: XAIgent Multi-Agent System Architecture</h2>
+      <p class="methodology">
+      <div class="image-container">
+        <figure>
+          <img src="images/xaigent_mas.png" alt="XAIgent Multi-Agent System Architecture">
+          <figcaption>XAIgent Multi-Agent System Architecture</figcaption>
+        </figure>
+        <br>
+        <figure>
+          <img src="images/teaser.png" alt="XAIgent Teaser">
+          <figcaption>Selected snapshots of XAIgent’s decision-making with human interaction in a Unity science lab simulation. The
+            top-right corner shows the robot’s camera view with colour-coded feedback: yellow blinking (agent listening), orange blinking
+            (processing input), green blinking (action in progress, e.g., movement), solid green (action completed, e.g., path computed), and
+            solid red (stopped). Visual and explanatory agents highlight key elements of communication, enhancing transparency and
+            providing clear cues.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/user_study.png" alt="XAIgent User Study">
+          <figcaption>User study results showing good usability, clarity and trustworthiness of XAIgent’s explanations.</figcaption>
+        </figure>
+      </div>
+      </p>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="container">
+      <h2>Conclusion</h2>
+      <p class="conclusion">
+        This work presents a multi-agent approach for explainable HRI, shifting robots from monolithic to
+        modular designs and showing early gains in user understanding, trust and usability.
+      </p>
+        
+      <p>Future work includes comparative studies with monolithic HRI systems, integration of
+        physiological sensing and automated LLM based evaluation of explanation quality. We also aim to
+        deploy the system on a real robot in a laboratory environment.
+      </p>
+    </section>
+
+    <!-- BibTeX -->
+    <section id="bibtex" class="container">
+      <h2>BibTeX</h2>
+      <p class="bibtex-block">
+        @inproceedings{10.1145/3764687.3770726,
+          author = {Somarathna, Rukshani and Perera, Madhawa and Xi, Mingze and Krumpholz, Alexander and Adcock, Matt},
+          title = {XAIgent: A Multi-Agentic Design Method for Explainable Human-Robot Interaction in Scientific Discovery},
+          year = {2025},
+          isbn = {9798400720161},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3764687.3770726},
+          doi = {10.1145/3764687.3770726},
+          numpages = {6},
+          keywords = {multi-agent design, human-centred explainable AI, HRI systems, scientific discovery},
+          location = {Sydney, Australia},
+          series = {OzCHI '25}
+          }
       </p>
     </section>
   </main>
